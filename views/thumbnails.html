@@ -1,0 +1,13 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>See it</title>
+</head>
+<body style="font-family: courier;">
+    <div class="thumbs">
+        {% for p in photos %}
+        <a class="thmb" href="{{ p.url }}"><img class="thumb" src="{{ p.img_src }}" /></a>
+        {% endfor %}
+    </div>
+</body>
+</html>
